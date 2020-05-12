@@ -1,14 +1,12 @@
 body {
     background-color: lightblue;
+    margin: 0px;
 }
-#calendar,
-.calendar-wrapper,
+.flipper-wrapper,
 .page-wrapper>.page {
-    transform-origin: 0% 0% 0px;
+    transform-origin: 50%;
 }
 
 .page-wrapper>.page {
-    width: 400px;
-    height: 300px;
     background-color: lime;
 }

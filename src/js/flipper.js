@@ -6,7 +6,7 @@ import './turn';
 const Page = (props) => {
 	return (
 		<div className="page-wrapper hard">
-			<div className="page" onClick={props.onClick}>
+			<div className="page hard" style={{width: props.width, height: props.height}} onClick={props.onClick}>
 				{props.data}
 			</div>
 		</div>
@@ -15,29 +15,20 @@ const Page = (props) => {
 
 export const Flipper = (props) => {
 	const [flipper, setFlipper] = useState(null);
+	const [width, setWidth] = useState(400)
+	const [height, setHeight] = useState(400)
 	useEffect(() => {
-		var $page = $('.page-wrapper>.page');
-		var $calendarWrapper = $('.calendar-wrapper');
-		var $pageWrapper = $('.page-wrapper');
-		var $calendar = $('#calendar');
+		var $flipper = $('.flipper');
 
-		var height = $page.height();
-		var width = $page.width();
-
-		$page.css('transform', `translate3d(0px, ${width}px, 0px) rotate(-90deg)`);
-
-		$calendarWrapper.height(width);
-		$calendarWrapper.width(height);
-		$calendarWrapper.css('transform', `translate3d(${width}px, 0px, 0px) rotate(90deg)`)
-
-		//$pageWrapper.height(width);
-		//$pageWrapper.width(height);
-
-		//$calendar.height(width);
-		//$calendar.width(height);
-
-		$calendar.turn({
+		var flipper_wrapper = $('.flipper-wrapper');
+		var page = $('.page-wrapper > .page');
+		
+		flipper_wrapper.css('transform', `rotate(90deg)`)
+		page.css('transform', ` rotate(-90deg)`);
+		
+		$flipper.turn({
 			/*display: 'single',*/
+			/*autoCenter: true,*/
 			acceleration: true,
 			gradients: false,
 			gradients: !$.isTouch,
@@ -48,21 +39,21 @@ export const Flipper = (props) => {
 				}
 			}
 		});
-		setFlipper($calendar);
+		setFlipper($flipper);
 	}, [])
 	return (
 		<div>
-			<div className="calendar-wrapper">
-				<div id="calendar">
+			<div className="flipper-wrapper" style={{width: width, height: height}}>
+				<div className="flipper">
 					{
 						props.items.map((item, i) => {
-							return <Page key={i} data={item} onClick={(e) => { (i % 2 == 1) ? flipper.turn('previous') : '' }} />
+							return <Page key={i} data={item} width={width} height={height} onClick={(e) => { (i % 2 == 1) ? flipper.turn('previous') : '' }} />
 						})
 					}
 				</div>
 			</div>
-			<div onClick={(e) => { flipper.turn('next') }}>Next</div>
-			<div onClick={(e) => { flipper.turn('previous') }}>Previous</div>
+			<button onClick={(e) => { flipper.turn('previous') }}>Previous</button>
+			<button onClick={(e) => { flipper.turn('next') }}>Next</button>
 		</div>
 	)
 }
