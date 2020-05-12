@@ -1184,13 +1184,13 @@ import $ from 'jquery';
 						c.opts.gradients && (g ? b.ashadow.css({
 							display: "",
 							left: f,
-							backgroundColor: "rgba(0,0,0," + 0.5 * o + ")"
+							backgroundColor: "rgba(0,0,0," + 0 * o + ")"
 						}).transform("rotateY(0deg)") : b.ashadow.hide(),
 							b.bshadow.css({
 								opacity: -o + 1
 							}),
 							s ? b.bshadow.parent()[0] != b.wrapper[0] && b.bshadow.appendTo(b.wrapper) : b.bshadow.parent()[0] != b.fpage[0] && b.bshadow.appendTo(b.fpage),
-							O(b.bshadow, j(100 * r, 0), j(100 * (-r + 1), 0), [[0, "rgba(0,0,0,0.3)"], [1, "rgba(0,0,0,0)"]], 2));
+							O(b.bshadow, j(100 * r, 0), j(100 * (-r + 1), 0), [[0, "rgba(0,0,0,0)"], [1, "rgba(0,0,0,0)"]], 2));
 						break;
 					case "sheet":
 						var t = this, G = 0, y, z, A, L, x, M, C, u = j(0, 0), P = j(0, 0), m = j(0, 0), I = i._foldingPage.call(this);
