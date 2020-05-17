@@ -1,0 +1,45 @@
+#pageflip {
+	width: 100%;
+	background: #ececec;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+/* ppp */
+.ppp .pf-page-container.pf-left-side {
+	border-radius: 10px 10px 0 0;
+}
+.ppp .pf-page-container.pf-right-side {
+	border-radius: 0 0 10px 10px;
+}
+.ppp #pf-dropshadow {
+	border-radius: 20px;
+}
+#pf-stage.ppp {
+	background: #444444;
+}
+.ppp .pf-left-side,
+.ppp .pf-right-side {
+	background: #888;
+}
+.ppp #pageflip-controls,
+.ppp #pageflip-controls a,
+.ppp #pf-pagerin {
+	color: rgba(255,255,255,0.5);
+}
+.ppp #pageflip-controls a {
+	text-decoration: none;
+}
+.ppp #pageflip-controls a:hover {
+	text-decoration: underline;
+}
+.ppp .pf-control-bar-button g,
+.ppp .pf-control-bar-pager g {
+	fill: rgba(255,255,255,0.5);
+}
+.ppp .pf-control-bar-button:not(.pf-disabled):hover g {
+	fill: #FFAA00;
+}
+.ppp #pageflip-controls {
+	background: rgba(68,68,68,0.35);
+}

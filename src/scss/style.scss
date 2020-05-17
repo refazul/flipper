@@ -6,47 +6,9 @@ body {
 .wrapper {
     text-align: center;
 }
-.flipper-wrapper,
-.page-wrapper>.page {
-    transform-origin: 50%;
-    margin: auto;
-}
 
-.page-wrapper>.page {
-    background-color: white;
-}
-.title {
-    font-size: 2em;
-    font-weight: bold;
-    padding: 1em;
-}
-.title_before {
-    font-style: italic;
-    padding: 1em;
-}
-.title_after {
-    padding: 1em;
-    text-align: justify;
-}
-.body {
-    padding: 1em;
-    text-align: justify;
-}
-.index {
-    width: 100%;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    div {
-        padding: 0.5em;
-        cursor: pointer;
-    }
-    div.even {
-        color: white;
-        background-color: #00b1b3;
-    }
-}
+@import './pageflip.scss';
+@import './pageflip-custom.scss';
 
 .hidden {
     display: none;
