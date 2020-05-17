@@ -1,135 +1,20 @@
 <!DOCTYPE html>
-<html xmlns:fb="https://ogp.me/ns/fb#">
 
 <head>
-    <!-- retina support -->
-    <script type="text/javascript">if ((window.devicePixelRatio === undefined ? 1 : window.devicePixelRatio) > 1)
-            document.cookie = 'HTTP_IS_RETINA=1;path=/';</script>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="description"
-        content="A fluid pageflip effect that's easy to use and highly customizable included PDF to flipbook converter" />
-    <meta name="keywords"
-        content="pageflip, flipbook, flipping book, template, book, free, WordPress Plugin, trial, page flip, html5, pdf" />
-    <meta name="author" content="Abel Vincze" />
-    <meta property="og:url" content="https://pageflip-books.com/" />
-    <meta property="og:title" content="A fluid page flip effect that's easy to use and highly customizable" />
-    <meta property="og:description"
-        content="PageFlip is the easiest and most powerful way to create and manage an interactive multimedia flipbook on the web. Anything you can display in HTML5 you can add to PageFlip, including images, animations, forms, videos, sound and music. Create a rich interactive experience with an interface that's as intuitive as using a real book! You can also convert your PDF files to Pageflip 5 with our online tool." />
-    <meta property="og:image" content="https://pageflip-books.com/images/shareimage.jpg" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>Pageflip 5 - The HTML5 Book Template</title>
-    <link rel="canonical" href="https://pageflip-books.com" />
-    <link type="text/css" rel="stylesheet" href="css/din.css">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fauna+One">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syncopate:400,700">
     <link type="text/css" rel="stylesheet" href="css/pageflip.css">
     <link type="text/css" rel="stylesheet" href="css/pageflip-custom.css">
-    <link type="text/css" rel="stylesheet" href="css/pageflip-website.css">
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-    <!--<script async src="https://paddle.s3.amazonaws.com/checkout/checkout.js"></script>-->
     <script type="text/javascript" src="js/pageflip5-min.js"></script>
-    <script type="text/javascript" src="js/key.js"></script>
     <script type="text/javascript" src="js/pageflip5-website.js"></script>
-    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-    <script type="text/javascript">
-        Paddle.Setup({ vendor: 2509 });
-    </script>
 </head>
 
 <body>
-    <div id="menu-container">
-        <!--class="withpdf"-->
-        <div id="menu">
-            <a href="#menu" title="Top">
-                <div id="menu-logo" class="menu-btn">
-                    <div class="menu-image"></div>
-                    <div class="menu-image hovered"></div>
-                </div>
-            </a>
-            <div id="menu-title" class="menu-item">
-                <div class="menu-image"></div>
-            </div>
-            <a href="#demobook-container" title="Pageflip 5 Demo Books & informations">
-                <div id="menu-pf5" class="menu-btn">
-                    <div class="menu-image"></div>
-                    <div class="menu-image hovered"></div>
-                </div>
-            </a>
-            <a href="pageflip4/" title="Pageflip Flash versions, + FREE version">
-                <div id="menu-pff" class="menu-btn">
-                    <div class="menu-image"></div>
-                    <div class="menu-image hovered"></div>
-                </div>
-            </a>
-            <a href="#licenses" title="Buy Pageflip 5 Licenses">
-                <div id="menu-buy" class="menu-btn">
-                    <div class="menu-image"></div>
-                    <div class="menu-image hovered"></div>
-                </div>
-            </a>
-        </div>
-        <!--<a href="pdf-converter.php" target="_blank"><div id="pdfconverterlink"></div></a>-->
-        <!--<div id="news"><a href="#pageflipfeatures" target="_blank">Pageflip 5.3 released with new features</a></div>-->
-        <!--<div id="news"><a href="http://flip.world" target="_blank"><div id="newscontent">And now we host your books at flip.world - Click!</div></a></div>-->
-    </div>
     <div id="main-container">
         <div id="pageflip"></div>
     </div>
-    <!--<a href="http://cssreel.com/Website/pageflip-5-the-book-template-for-th" target="_blank"><div style="position: fixed; top: 0; right: 0; width:111px; height:111px; overflow: hidden; background: url( images/nominee5.png ) no-repeat; z-index: 1000;"></div></a>-->
-    <div id="footer-container">
-        <div id="footer">
-            <div class="onefour">
-                <h2>Pageflip 5:</h2>
-                <ul>
-                    <li><a href="#demobooks">Demo books</a></li>
-                    <li><a href="#compatibility">Compatibility</a></li>
-                    <li><a href="#pageflipfeatures">Features</a></li>
-                    <li><a href="#licenses">Available Licenses</a></li>
-                    <li><a href="#upgrades">Upgrade informations</a></li>
-                </ul>
-            </div>
-            <div class="onefour">
-                <h2>All Versions:</h2>
-                <ul>
-                    <li><a href="#menu">Pageflip 5.7 - HTML5</a></li>
-                    <li><a href="trial.php">Pageflip 5.7 - Free Trial</a></li>
-                    <li><a href="pageflip4/">Pageflip 4.1 - Free version</a></li>
-                    <li><a href="pageflip3/">Pageflip 3.6 - Free version</a></li>
-                </ul>
-            </div>
-            <div class="onefour">
-                <h2>Help & Support</h2>
-                <ul>
-                    <li><a href="documentation.php">Documentation (EN)</a> <a href="documentation_de.php">(DE)</a></li>
-                    <li><a href="documentation-version-history.php">Version history</a></li>
-                    <!--<li><a href="http://blog.pageflip-books.com">Pageflip Blog</a></li>-->
-                    <li><a href="mailto:support@pageflip-books.com">E-mail support (English)</a></li>
-                    <li><a href="mailto:info@pageflip-books.com">General enquiries</a></li>
-                </ul>
-            </div>
-            <div class="onefour last">
-                <h2>Social</h2>
-                <ul>
-                    <li><a href="https://www.twitter.com/MaccPageFlip">Follow me on Twitter</a></li>
-                    <li>Share Pageflip on:</li>
-                </ul>
-                <a href="https://twitter.com/intent/tweet?original_referer=http%3a%2f%2fpageflip-books.com&amp;url=http%3a%2f%2fpageflip-books.com&amp;text=Pageflip%205%2c+The+Book+Template+for+the+Web+via+%40MaccPageFlip"
-                    target="_blank"><img src="images/share_on_twitter.svg" alt="Share Pageflip 5 on Twitter"></a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpageflip-books.com"
-                    target="_blank"><img src="images/share_on_facebook.svg" alt="Share Pageflip 5 on Facebook"></a>
-                <a href="https://pinterest.com/pin/create/button/?url=http%3a%2f%2fpageflip-books.com&amp;media=http%3a%2f%2fpageflip-books.com%2fimages%2fshareimage.jpg&amp;description=Pageflip%205%2c+The+Book+Template+for+the+Web"
-                    target="_blank"><img src="images/share_on_pinterest.svg" alt="Share Pageflip 5 on Pinterest"></a>
-
-            </div>
-            <div class="copyright">
-                &copy; 2004-2020 by Abel Vincze - all rights reserved - visited 3547219 times - <a
-                    href="https://www.twitter.com/MaccPageFlip">follow me on twitter</a>
-            </div>
-        </div>
-    </div>
-
 </body>
 
 </html>

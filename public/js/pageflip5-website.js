@@ -84,9 +84,7 @@ $( function() {
 					ShareLink: "https://pageflip-books.com",
 					ShareText: "Pageflip5, The Book Template for the Web",
 					ShareVia: "@MaccPageFlip",
-					ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg",
-					Copyright: Key.Copyright,
-					Key: Key.Key
+					ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg"
 				},
 		/*demo1: {	PageDataFile: "demobook1/demobook1.html",	//["externalPageData.html", "externalPageData2.html"],
 					PageWidth: 434,
@@ -119,9 +117,7 @@ $( function() {
 					ShareLink: "https://pageflip-books.com",
 					ShareText: "Pageflip5, The Book Template for the Web",
 					ShareVia: "@MaccPageFlip",
-					ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg",
-					Copyright: Key.Copyright,
-					Key: Key.Key
+					ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg"
 				},*/
 		demo2: {	PageDataFile: "demobook2/demobook2.html",	//["externalPageData.html", "externalPageData2.html"],
 					PageWidth: 434,
@@ -151,9 +147,7 @@ $( function() {
 					ShareLink: "https://pageflip-books.com",
 					ShareText: "Pageflip5, The Book Template for the Web",
 					ShareVia: "@MaccPageFlip",
-					ShareImageURL: "https://pageflip-books.com/images/shareimage2.jpg",
-					Copyright: Key.Copyright,
-					Key: Key.Key
+					ShareImageURL: "https://pageflip-books.com/images/shareimage2.jpg"
 				},
 		yotenia10perritos: {	PageDataFile: "demobook3/demobook3.html",
 					PageWidth: 450,
@@ -183,9 +177,7 @@ $( function() {
 					ShareLink: "https://pageflip-books.com",
 					ShareText: "Pageflip5, The Book Template for the Web",
 					ShareVia: "@MaccPageFlip",
-					ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg",
-					Copyright: Key.Copyright,
-					Key: Key.Key
+					ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg"
 				},
 		fantasticfour: {	PageDataFile: "demobook4/demobook4.html",
 					PageWidth: 516,
@@ -220,12 +212,6 @@ $( function() {
 					ShareVia: "@MaccPageFlip",
 					ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg",
 					PerformanceAware: true,
-					ShowCopyright: true,
-					Copyright: "All Characters © Marvel Comics. All artwork © Juan Doe. Powered by Pageflip5",
-					Key: "hjWxMjfD5IjN9Jb4o5lqwIb"
-					
-					//Copyright: Key.Copyright,
-					//Key: Key.Key
 				},
 		ppp: {		PageDataFile: "ppp/ppp.html",
 					SinglePageMode: false,
@@ -269,9 +255,6 @@ $( function() {
 					ShareText: "Pageflip5, The Book Template for the Web",
 					ShareVia: "@MaccPageFlip",
 					ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg",
-					ShowCopyright: true,
-					Copyright: "<a href='http://ustwo.com/ppp' target='_blank'>Copyright © 2014 ustwo studio Ltd. All rights reserved.</a> <a href='pdf-converter.php' target='_blank'>This Book was converted using the PDF to Pageflip5 converter!</a>",
-					Key: "T6/QY1LOnIe5krgmA2I/fej"
 				}
 
 		},
