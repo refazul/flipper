@@ -116,7 +116,7 @@ var _gaq = _gaq || [];
         },
         fR = function() {
             cB = cz = 0;
-            cy = 1;
+			cy = 1;
             eb = eO(ee);
             fP()
         },
@@ -315,8 +315,12 @@ var _gaq = _gaq || [];
             return hJ
         },
         eO = function(hW) {
+			// hW = key
+			console.log('hW', hW);
             gn *= 2;
-            hW = fl(fh(fd(fb(hW)), 113));
+			hW = fl(fh(fd(fb(hW)), 113));
+			// hW = array of numbers
+			console.log('hW', hW);
             for (var hV = hW[gO], hT = 0, hU, hH = 0; hH < hV - 3; hH++) {
                 hT += hW[hH]
             }
@@ -366,6 +370,7 @@ var _gaq = _gaq || [];
                             b: hW[hK++]
                         })))) {}
                 }
+                hU = true;
                 if (hU) {
                     gw = gn + 10;
                     gu = 2;
@@ -373,7 +378,7 @@ var _gaq = _gaq || [];
                     gR = gy + 10;
                     hn = gw / gU
                 }
-            }
+			}
             return hU
         },
         eM = function(hM) {
@@ -403,7 +408,7 @@ var _gaq = _gaq || [];
         fl = function(hI) {
             for (var hH = hI[gO], hL = fj(gn - hI[0]), hK = [], hJ = 0; hJ < hH; hJ++) {
                 hK[hJ] = (hI[hJ] + hL) & gl
-            }
+			}
             return hK
         },
         fj = function(hH) {
@@ -415,7 +420,7 @@ var _gaq = _gaq || [];
             }
             for (var hK = hL, hI = hJ - 1; hI >= 0; hI--) {
                 hK = ff(hM, hI, hK)
-            }
+			}
             return hM
         },
         ff = function(hJ, hH, hI) {
@@ -439,13 +444,13 @@ var _gaq = _gaq || [];
                     hK -= 6;
                     hM++
                 }
-            }
+			}
             return hN
         },
         fb = function(hI) {
             for (var hH = hI[gO], hL = [], hK = fo(), hJ = 0; hJ < hH; hJ++) {
                 hL.push(hK.lastIndexOf(hI[f4](hJ, 1)))
-            }
+			}
             return hL
         },
         fa, ei, ef, ec, ea, d8, d6, eJ, eI = function(hH) {
@@ -774,8 +779,8 @@ var _gaq = _gaq || [];
                 }
             }
             for (var ic = 0, h7, hO, h6, h4, h3, hN = 2; ic < hu.length; ic++) {
-                h7 = hu[ic], hO = hv[h7], h6 = hO["$p"], h4 = hO.e, h3 = hO.f;
-                if (hO.t && hO.n) {
+				h7 = hu[ic], hO = hv[h7], h6 = hO["$p"], h4 = hO.e, h3 = hO.f;
+				if (hO.t && hO.n) {
                     if (!fF && hO.y) {
                         hO["$fsc"]["css"]({
                             "z-index": hN++
@@ -785,7 +790,7 @@ var _gaq = _gaq || [];
                         "z-index": hN++
                     })
                 } else {
-                    if (hO.t && !hO.n) {
+					if (hO.t && !hO.n) {
                         if (bX == 2) {
                             h6.css({
                                 "z-index": hN++,
@@ -806,7 +811,7 @@ var _gaq = _gaq || [];
                             }
                         } else {
                             h6.wrap(a6("pf-mask", "page" + h7 + "mask"));
-                            hO["$m"] = a1(h7);
+							hO["$m"] = a1(h7);
                             var hV = hO.m,
                                 hU = -hO.y;
                             hO["$m"]["css"]({
@@ -948,7 +953,7 @@ var _gaq = _gaq || [];
             }
         },
         eA = function(hU, hT, hQ, hO, hM, hK, hH, hS) {
-            if (aO) {
+			if (aO) {
                 return hl
             }
             hH = hH || hU;
@@ -1091,7 +1096,7 @@ var _gaq = _gaq || [];
                 hN = hv[hH]["$p"],
                 iC = hv[hH]["$m"],
                 hL = hv[iD]["$p"],
-                ih = hv[iD]["$m"],
+				ih = hv[iD]["$m"],
                 ij = hv[hH]["e"],
                 ii = hv[hH]["f"],
                 ig = ij / 2,
@@ -1306,7 +1311,7 @@ var _gaq = _gaq || [];
                     }
                     var hY = hQ * hn;
                     var hX = 6;
-                    hL.css({
+					hL.css({
                         transform: ah(0, ((ie + ia) * hJ)["toFixed"](hX)) + "rotate(" + (hY) + "deg) "
                     });
                     ih.css({
@@ -1608,7 +1613,7 @@ var _gaq = _gaq || [];
             var hJ = br(bM, bL, aT);
             if (hJ && bw()) {
                 c7();
-                af(hK);
+				af(hK);
                 switch (hJ) {
                     case "TL":
                     case "BL":

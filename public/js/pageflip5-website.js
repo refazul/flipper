@@ -228,7 +228,7 @@ $( function() {
 					//Key: Key.Key
 				},
 		ppp: {		PageDataFile: "ppp/ppp.html",
-					SinglePageMode: true,
+					SinglePageMode: false,
 					PageWidth: 930,
 					PageHeight: 678,
 					PageCache: 5,
