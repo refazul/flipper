@@ -1,7 +1,5 @@
 node_modules
 package-lock.json
-public/css
+public/css/style.css
+public/css/style.css.map
 public/js/bundle.js
-public/js/jquery*.js
-img
-*.jpg
