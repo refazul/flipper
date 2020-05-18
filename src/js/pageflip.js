@@ -83,10 +83,10 @@ export const PageFlip = (props) => {
 			ThumbnailsToFront: true,
 			ThumbnailsAutoHide: 5000,
 			ControlbarFile: "controlbar_svg.html",
-			ShareLink: "https://pageflip-books.com",
-			ShareText: "Pageflip5, The Book Template for the Web",
-			ShareVia: "@MaccPageFlip",
-			ShareImageURL: "https://pageflip-books.com/images/shareimage.jpg",
+			ShareLink: "",
+			ShareText: "",
+			ShareVia: "@",
+			ShareImageURL: "",
 		}, 'ppp');
 		var pageflip = $pageflip.pageflip();
 	}, [])
