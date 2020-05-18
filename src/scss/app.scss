@@ -2,6 +2,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
     user-select: none;
+    color: $font_color;
 }
 .center {
     text-align: center;
@@ -64,7 +65,7 @@ body {
 
 .ppp {
     .pf-page-content {
-        padding: 2em;
+        padding: 0 1em;
         text-align: justify;
     }
     #pageflip-thumbnails {

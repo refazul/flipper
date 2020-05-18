@@ -9,7 +9,7 @@ export const PageFlip = (props) => {
 			onResize = function (e) {
 				setBodyClass();
 				var h = window.innerHeight - menuH;
-				if (h > 800) h = 800;
+				//if (h > 800) h = 800;
 				if (screenW < 480) h = 320;
 				$("#pageflip").css({ height: h });
 			},
@@ -48,11 +48,11 @@ export const PageFlip = (props) => {
 		$pageflip.pageflipInit({
 			PageDataFile: "ppp/ppp.html",
 			SinglePageMode: false,
-			PageWidth: 930,
-			PageHeight: 678,
+			PageWidth: 768,
+			PageHeight: 640,
 			PageCache: 5,
-			Margin: 32,
-			MarginBottom: 90,
+			Margin: 0,
+			MarginBottom: 0,
 			PerformanceAware: false,
 			AutoScale: true,
 			HardCover: true,
@@ -72,7 +72,6 @@ export const PageFlip = (props) => {
 			HardFlipOpacity: 0.2,
 			EmbossOpacity: 0.2,
 			HashControl: true,
-			PageCache: 5,
 			MouseControl: true,
 			HotKeys: true,
 			ControlbarToFront: true,
