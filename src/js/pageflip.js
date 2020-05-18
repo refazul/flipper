@@ -82,7 +82,6 @@ export const PageFlip = (props) => {
 			ThumbnailHeight: 160,
 			ThumbnailsToFront: true,
 			ThumbnailsAutoHide: 5000,
-			ControlbarFile: "controlbar_svg.html",
 			ShareLink: "",
 			ShareText: "",
 			ShareVia: "@",
